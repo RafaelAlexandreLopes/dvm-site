@@ -150,6 +150,7 @@ p{margin:0 0 1em}
 /* Serviços */
 .svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .svc{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:28px 26px;text-align:center}
+@supports (grid-template-rows:subgrid){@media (min-width:641px){.svc{display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0;align-content:start}.svc .note{align-self:start}}}
 .svc-ico{width:68px;height:68px;border-radius:18px;background:var(--teal);display:grid;place-items:center;margin:0 auto 18px}
 .svc-ico .ico{width:50px;height:50px;color:#fff}
 .svc h3{margin-bottom:.45em;color:#B8860B;text-align:center}
@@ -373,7 +374,7 @@ footer a{color:#D4E3E3}
           <li><div><h3>Recebe o relatório</h3><p>Você e o seu veterinário, com imagens e medições, em 3 a 5 dias úteis. Os resultados principais são discutidos com o veterinário logo após o exame.</p></div></li>
         </ol>
         <div class="clin" id="clinicas">
-          <p><b>Clínicas e hospitais</b> Combinamos datas, exames e condições diretamente.</p>
+          <p><b>Clínicas e Hospitais</b> Combinamos datas, exames e condições diretamente.</p>
           <a class="btn btn-main" href="tel:+351927149982"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg> Ligar</a>
         </div>
       </div>

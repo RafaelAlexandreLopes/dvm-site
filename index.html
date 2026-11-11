@@ -12,7 +12,9 @@
 <meta property="og:url" content="https://dvm.pt/">
 <meta property="og:locale" content="pt_PT">
 <meta name="theme-color" content="#25403C">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2325403C'/%3E%3Cpath d='M14 32 32 17l18 15' fill='none' stroke='%23E2B02A' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='41' r='7' fill='%23E2B02A'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
@@ -66,11 +68,12 @@ p{margin:0 0 1em}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:18px}
 .top.solid{background:#fff;box-shadow:0 1px 0 var(--line)}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
-.brand .mark{width:40px;height:40px;border-radius:11px;background:var(--teal);display:grid;place-items:center;flex:none}
-.brand .mark svg{width:26px;height:26px}
-.brand b{font:900 1.55rem/1 var(--font);letter-spacing:.01em}
+.brand .mark{height:60px;width:auto;flex:none;display:block}
+.brand .mark.cor,.top.solid .brand .mark.br{display:none}
+.top.solid .brand .mark.cor{display:block}
+.brand b{font:800 1.6rem/1 var(--font);letter-spacing:.04em}
 .brand small{display:block;font:600 .74rem/1.1 var(--font);opacity:.85}
-.top.solid .brand{color:var(--teal)}
+.top.solid .brand{color:#006666}
 .nav{display:flex;align-items:center;gap:26px}
 .nav a.l{color:#fff;text-decoration:none;font-weight:700;font-size:.97rem}
 .nav a.l:hover{color:var(--mustard)}
@@ -253,7 +256,7 @@ footer a{color:#D5E2DF}
 <header class="top" id="top">
   <div class="wrap">
     <a class="brand" href="#" aria-label="DVM — Diagnóstico Veterinário Móvel, início">
-      <span class="mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 32 32 13l22 19" fill="none" stroke="#E2B02A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="43" r="8" fill="#E2B02A"/></svg></span>
+      <img class="mark br" src="assets/simbolo-dvm-160-branco.png" alt="" width="57" height="60"><img class="mark cor" src="assets/simbolo-dvm-160.png" alt="" width="57" height="60">
       <span><b>DVM</b><small>Diagnóstico Veterinário Móvel</small></span>
     </a>
     <nav class="nav" aria-label="Principal">

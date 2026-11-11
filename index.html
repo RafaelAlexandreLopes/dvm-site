@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DVM — Ecografia veterinária ao domicílio e em clínica | Lisboa e margem sul</title>
+<meta name="description" content="Ecografia veterinária ao domicílio e para clínicas e hospitais em Lisboa e na margem sul. Marcação por WhatsApp ou telefone. Relatório detalhado enviado ao veterinário assistente.">
+<link rel="canonical" href="https://dvm.pt/">
+<meta property="og:title" content="DVM — Diagnóstico Veterinário Móvel">
+<meta property="og:description" content="Ecografia veterinária onde for preciso: ao domicílio e em clínicas, em Lisboa e na margem sul.">
+<meta property="og:url" content="https://dvm.pt/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_PT">
+<meta name="theme-color" content="#13233A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4 L6 52 A44 44 0 0 0 58 52 Z' fill='%2313233A'/%3E%3Cellipse cx='32' cy='40' rx='9' ry='6' fill='%233A86C8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VeterinaryCare",
+  "name": "DVM — Diagnóstico Veterinário Móvel",
+  "url": "https://dvm.pt/",
+  "telephone": "+351927149982",
+  "email": "geral@dvm.pt",
+  "areaServed": ["Lisboa","Amadora","Loures","Odivelas","Oeiras","Cascais","Sintra","Alverca","Alcochete","Almada","Barreiro","Moita","Montijo","Palmela","Seixal","Sesimbra","Setúbal"],
+  "founder": {"@type": "Person", "name": "Rafael Lopes", "jobTitle": "Médico Veterinário"},
+  "foundingDate": "2022"
+}
+</script>
+<style>
+:root{
+  --ink:#13233A;          /* texto e superfícies escuras */
+  --ink-soft:#4A5B70;     /* texto secundário */
+  --paper:#F6F8FA;        /* fundo */
+  --white:#FFFFFF;
+  --mist:#DCE7F1;         /* linhas e fundos suaves */
+  --gel:#2F78BC;          /* acento: azul do gel de ecografia */
+  --gel-deep:#1F5C96;
+  --wa:#25D366;           /* WhatsApp */
+  --wa-ink:#0B3D22;
+  --radius-s:6px;
+  --radius-l:18px;
+  --wrap:1080px;
+  --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --display:"Bricolage Grotesque","Atkinson Hyperlegible",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+img,svg{display:block;max-width:100%}
+a{color:var(--gel-deep);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gel);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.1;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(1.75rem,3.6vw,2.5rem);margin-bottom:.6em}
+h3{font-size:1.25rem;font-weight:600}
+p{margin:0 0 1em;max-width:62ch}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 12px;z-index:99}
+.skip:focus{left:8px}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;gap:.55em;font:700 1.0625rem/1 var(--body);text-decoration:none;padding:.95em 1.3em;border-radius:999px;border:2px solid transparent;white-space:nowrap}
+.btn svg{width:1.25em;height:1.25em;flex:none}
+.btn-wa{background:var(--wa);color:var(--wa-ink)}
+.btn-wa:hover{background:#1fbd5a}
+.btn-call{background:var(--white);color:var(--ink);border-color:var(--ink)}
+.btn-call:hover{background:var(--ink);color:#fff}
+.btn-sm{padding:.65em 1em;font-size:.95rem}
+
+/* Cabeçalho */
+header.top{position:sticky;top:0;z-index:20;background:rgba(246,248,250,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--mist)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
+.brand-mark{width:30px;height:30px}
+.brand b{font:700 1.35rem/1 var(--display);letter-spacing:.02em}
+.brand span{font-size:.8rem;color:var(--ink-soft);line-height:1.15;max-width:9.5em}
+nav.links{display:flex;gap:22px;align-items:center}
+nav.links a{color:var(--ink);text-decoration:none;font-size:.95rem}
+nav.links a:hover{color:var(--gel-deep);text-decoration:underline}
+@media (max-width:860px){nav.links a:not(.btn){display:none}}
+@media (max-width:420px){.brand span{display:none}}
+
+/* Topo */
+.hero{padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.5rem,6.2vw,4.4rem);font-weight:700;letter-spacing:-.025em;line-height:1.02;margin-bottom:.45em}
+.hero .lede{font-size:1.2rem;color:var(--ink-soft);max-width:34ch;margin-bottom:1.6em}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.clinic-note{font-size:.98rem;color:var(--ink-soft);margin:0}
+.clinic-note a{font-weight:700}
+.scan{position:relative;justify-self:center;width:100%;max-width:440px}
+.scan svg{width:100%;height:auto;filter:drop-shadow(0 18px 30px rgba(19,35,58,.18))}
+@media (max-width:860px){
+  .hero{padding:32px 0 48px}
+  .hero .wrap{grid-template-columns:1fr;gap:28px}
+  .scan{max-width:260px;justify-self:start}
+}
+@media (max-width:520px){
+  .scan{display:none}
+}
+
+/* Secções */
+section.block{padding:72px 0;border-top:1px solid var(--mist)}
+.intro{color:var(--ink-soft);font-size:1.1rem;margin-bottom:2em}
+
+/* Como marcar */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-top:58px}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;font:700 1.15rem/42px var(--display);text-align:center}
+.steps li:not(:last-child)::after{content:"";position:absolute;top:21px;left:54px;right:-16px;height:2px;background:repeating-linear-gradient(90deg,var(--mist) 0 6px,transparent 6px 12px)}
+.steps h3{margin-bottom:.35em}
+.steps p{font-size:1rem;color:var(--ink-soft);margin:0}
+.clinics-box{margin-top:44px;padding:22px 24px;background:var(--white);border:1px solid var(--mist);border-radius:var(--radius-l);display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;justify-content:space-between}
+.clinics-box p{margin:0;max-width:52ch}
+@media (max-width:860px){
+  .steps{grid-template-columns:1fr;gap:22px}
+  .steps li{padding:0 0 0 60px;min-height:42px}
+  .steps li:not(:last-child)::after{top:50px;bottom:-18px;left:20px;right:auto;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--mist) 0 6px,transparent 6px 12px)}
+}
+
+/* Serviços */
+.services{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;border-top:2px solid var(--ink)}
+.svc{padding:26px 0;border-bottom:1px solid var(--mist)}
+.svc h3{margin-bottom:.4em}
+.svc p{font-size:1rem;margin-bottom:.6em}
+.svc .note{font-size:.95rem;color:var(--ink-soft)}
+.svc .where{display:inline-block;font-size:.82rem;font-weight:700;color:var(--gel-deep);background:#E6F0F9;border-radius:var(--radius-s);padding:3px 8px;margin-bottom:10px}
+details{font-size:.95rem}
+details summary{cursor:pointer;color:var(--gel-deep);font-weight:700;list-style:none;display:inline-flex;align-items:center;gap:6px}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"+";display:inline-grid;place-items:center;width:20px;height:20px;border:1.5px solid currentColor;border-radius:50%;font-size:.9rem;line-height:1}
+details[open] summary::before{content:"–"}
+details p{margin:.6em 0 0;color:var(--ink-soft)}
+@media (max-width:760px){.services{grid-template-columns:1fr}}
+
+/* Preços */
+.prices{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.price-card{background:var(--ink);color:#fff;border-radius:var(--radius-l);padding:28px}
+.price-card h3{color:#fff;margin-bottom:.3em}
+.price-card .sub{color:#B9C8D8;font-size:.95rem;margin-bottom:1.2em}
+.price-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.price-table th,.price-table td{padding:14px 8px;text-align:right;border-bottom:1px solid rgba(255,255,255,.14)}
+.price-table th:first-child,.price-table td:first-child{text-align:left;padding-left:0}
+.price-table thead th{font-weight:400;color:#B9C8D8;font-size:.95rem}
+.price-table td.v{font:700 1.6rem/1 var(--display)}
+.price-table td:first-child{font-size:1rem}
+.price-table tr:last-child td{border-bottom:0}
+.zones h3{margin-bottom:.3em}
+.zones p{font-size:1rem}
+.zones .z{margin-bottom:22px}
+.zone-tag{display:inline-block;font-size:.82rem;font-weight:700;border-radius:var(--radius-s);padding:3px 8px;margin-bottom:6px;background:var(--mist);color:var(--ink)}
+.small{font-size:.95rem;color:var(--ink-soft)}
+@media (max-width:860px){.prices{grid-template-columns:1fr}}
+
+/* Preparação */
+.prep{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.prep ul{list-style:none;margin:0;padding:0}
+.prep li{display:grid;grid-template-columns:72px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--mist);align-items:baseline}
+.prep li .k{font:700 1.15rem/1.15 var(--display);color:var(--gel-deep)}
+.prep li p{margin:0;font-size:1rem}
+.prep h3{margin-bottom:.4em}
+@media (max-width:760px){.prep{grid-template-columns:1fr;gap:28px}}
+
+/* Sobre */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
+.about .who{font-size:1rem;color:var(--ink-soft)}
+.about .who b{display:block;font:700 1.5rem/1.15 var(--display);color:var(--ink);margin-bottom:4px}
+.about ul{padding-left:1.1em;margin:0 0 1.2em}
+.about li{margin-bottom:.35em}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:16px}}
+
+/* Contactos */
+.contact{background:var(--ink);color:#fff;border-radius:var(--radius-l);padding:44px 36px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.contact h2{color:#fff}
+.contact p{color:#C9D6E3}
+.contact .cta-row{margin:0}
+.contact dl{margin:0;display:grid;gap:14px}
+.contact dt{font-size:.85rem;color:#9FB2C6}
+.contact dd{margin:0;font-size:1.15rem}
+.contact dd a{color:#fff}
+@media (max-width:760px){.contact{grid-template-columns:1fr;padding:32px 22px}}
+
+footer{padding:36px 0 110px;font-size:.9rem;color:var(--ink-soft)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* Barra fixa de marcação no telemóvel */
+.dock{display:none}
+@media (max-width:760px){
+  .dock{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(246,248,250,.96);border-top:1px solid var(--mist);backdrop-filter:blur(8px)}
+  .dock .btn{justify-content:center;width:100%}
+  header.top .btn{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="DVM — Diagnóstico Veterinário Móvel, início">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 L6 52 A44 44 0 0 0 58 52 Z" fill="#13233A"/><ellipse cx="32" cy="40" rx="9" ry="6" fill="#2F78BC"/></svg>
+      <b>DVM</b><span>Diagnóstico Veterinário Móvel</span>
+    </a>
+    <nav class="links" aria-label="Secções">
+      <a href="#marcar">Como marcar</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#precos">Preços</a>
+      <a href="#sobre">Sobre</a>
+      <a class="btn btn-wa btn-sm" href="https://wa.me/351927149982?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20ecografia." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+        Marcar
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" aria-labelledby="titulo">
+    <div class="wrap">
+      <div>
+        <h1 id="titulo">Ecografia veterinária onde for preciso</h1>
+        <p class="lede">Exames ecográficos ao domicílio e em clínicas e hospitais veterinários, em Lisboa e na margem sul. Relatório detalhado, com imagens, para o seu veterinário.</p>
+        <div class="cta-row">
+          <a class="btn btn-wa" href="https://wa.me/351927149982?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20ecografia." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+            Marcar por WhatsApp
+          </a>
+          <a class="btn btn-call" href="tel:+351927149982">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+            Ligar 927 149 982
+          </a>
+        </div>
+        <p class="clinic-note">Clínica ou hospital? <a href="#clinicas">Fale comigo diretamente</a>.</p>
+      </div>
+
+      <figure class="scan" aria-hidden="true">
+        <svg viewBox="0 0 400 300">
+          <defs>
+            <clipPath id="sector"><path d="M200 14 L36 236 A276 276 0 0 0 364 236 Z"/></clipPath>
+            <filter id="speckle" x="0" y="0" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7"/>
+              <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 -.18"/>
+            </filter>
+            <radialGradient id="depth" cx="50%" cy="0%" r="100%">
+              <stop offset="0" stop-color="#2B3B50"/>
+              <stop offset=".65" stop-color="#16263B"/>
+              <stop offset="1" stop-color="#0E1A2A"/>
+            </radialGradient>
+            <radialGradient id="organ" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#0B1522"/>
+              <stop offset=".72" stop-color="#132236"/>
+              <stop offset="1" stop-color="#9FB2C6" stop-opacity=".9"/>
+            </radialGradient>
+          </defs>
+          <g clip-path="url(#sector)">
+            <rect width="400" height="330" fill="url(#depth)"/>
+            <rect width="400" height="330" filter="url(#speckle)" opacity=".55"/>
+            <path d="M90 110 Q200 75 310 110" stroke="#C9D6E3" stroke-opacity=".35" stroke-width="5" fill="none"/>
+            <path d="M70 140 Q200 105 330 140" stroke="#C9D6E3" stroke-opacity=".18" stroke-width="3" fill="none"/>
+            <ellipse cx="205" cy="200" rx="92" ry="52" fill="url(#organ)"/>
+            <ellipse cx="205" cy="200" rx="92" ry="52" fill="none" stroke="#E7EEF5" stroke-opacity=".7" stroke-width="2.5"/>
+            <ellipse cx="200" cy="202" rx="36" ry="16" fill="#E7EEF5" fill-opacity=".22"/>
+          </g>
+          <path d="M200 14 L36 236 A276 276 0 0 0 364 236 Z" fill="none" stroke="#13233A" stroke-width="2"/>
+          <g fill="#2F78BC">
+            <circle cx="376" cy="70" r="2.5"/><circle cx="380" cy="120" r="2.5"/><circle cx="384" cy="170" r="2.5"/><circle cx="388" cy="220" r="2.5"/>
+          </g>
+          <g stroke="#2F78BC" stroke-width="2" fill="none">
+            <path d="M126 200 l10 -6 m-10 6 l10 6"/><path d="M284 200 l-10 -6 m10 6 l-10 6"/>
+          </g>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block" id="marcar" aria-labelledby="h-marcar">
+    <div class="wrap">
+      <h2 id="h-marcar">Marcar uma ecografia em casa</h2>
+      <p class="intro">Quatro passos. O seu animal fica no conforto de casa, sem viagens nem salas de espera.</p>
+      <ol class="steps">
+        <li><h3>Peça a requisição</h3><p>Ao seu médico veterinário assistente, com o motivo do exame. É obrigatória.</p></li>
+        <li><h3>Marque comigo</h3><p>Por WhatsApp ou telefone. Envie uma foto da requisição.</p></li>
+        <li><h3>Faço o exame em casa</h3><p>Num espaço calmo e com pouca luz. Demora cerca de 20 minutos.</p></li>
+        <li><h3>Recebe o relatório</h3><p>Você e o seu veterinário, com imagens e medições, em 3 a 5 dias úteis. Os resultados principais são discutidos com o veterinário logo após o exame.</p></li>
+      </ol>
+      <div class="clinics-box" id="clinicas">
+        <p><b>Clínicas e hospitais veterinários:</b> faço ecografias nas vossas instalações. Falem comigo diretamente para combinar exames e condições.</p>
+        <a class="btn btn-call btn-sm" href="tel:+351927149982">Ligar 927 149 982</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="servicos" aria-labelledby="h-servicos">
+    <div class="wrap">
+      <h2 id="h-servicos">Serviços</h2>
+      <div class="services">
+        <article class="svc">
+          <span class="where">Em casa e na clínica</span>
+          <h3>Ecografia abdominal</h3>
+          <p>Avaliação completa de todos os órgãos do abdómen, feita de forma metódica para não deixar passar alterações discretas.</p>
+          <details><summary>Ver detalhes</summary><p>Fígado e vesícula biliar, pâncreas, baço, estômago e intestinos, rins, ureteres e bexiga, glândulas adrenais, próstata e testículos ou ovários e útero, mesentério, linfonodos, vasos e superfícies serosas.</p></details>
+        </article>
+        <article class="svc">
+          <span class="where">Em casa e na clínica</span>
+          <h3>Ecografia torácica e pleural</h3>
+          <p>Útil quando há líquido no tórax, massas ou alterações pulmonares, muitas vezes difíceis de ver só com radiografia.</p>
+          <details><summary>Ver detalhes</summary><p>Contornos dos lobos pulmonares, pleura, vasos e linfonodos mediastínicos. Avalia derrame pleural, consolidação ou colapso pulmonar e massas ou nódulos. Complementa, sem substituir, a radiografia torácica, a TAC ou a ressonância magnética.</p></details>
+        </article>
+        <article class="svc">
+          <span class="where">Em casa e na clínica</span>
+          <h3>Ecografia cervical</h3>
+          <p>Estudo das estruturas do pescoço, como a tiróide, as paratiróides e a laringe.</p>
+          <p class="note">Pode ser necessária uma sedação ligeira para o animal relaxar o pescoço.</p>
+          <details><summary>Ver detalhes</summary><p>Laringe e cordas vocais, tiróide, paratiróides, glândulas salivares, vasos e linfonodos.</p></details>
+        </article>
+        <article class="svc">
+          <span class="where">Em casa e na clínica</span>
+          <h3>Diagnóstico de gestação</h3>
+          <p>Confirma a gestação, avalia a viabilidade dos fetos e estima a data do parto.</p>
+          <p class="note">Possível a partir do dia 21 após a cobrição na gata e do dia 25 na cadela.</p>
+          <details><summary>Ver detalhes</summary><p>Permite acompanhar o desenvolvimento dos órgãos fetais, sobretudo em raças com risco de parto difícil. Para contar os fetos, a radiografia no último terço da gestação é mais precisa.</p></details>
+        </article>
+        <article class="svc">
+          <span class="where">Na clínica</span>
+          <h3>Punção aspirativa ecoguiada (PAAF)</h3>
+          <p>Recolha de células de um órgão, nódulo ou massa com uma agulha fina, guiada em tempo real pela ecografia, para análise em laboratório.</p>
+          <p class="note">Requer ecografia prévia feita pela DVM ou por um centro de referência.</p>
+          <details><summary>Ver detalhes</summary><p>Ver a agulha permite dirigi-la à lesão, evitar zonas muito vascularizadas e obter amostras mais representativas, analisadas em laboratórios certificados.</p></details>
+        </article>
+        <article class="svc">
+          <span class="where">Na clínica ou hospital</span>
+          <h3>Biópsia Tru-Cut ecoguiada</h3>
+          <p>Recolha de uma amostra maior de tecido, que mantém a sua estrutura, para histopatologia e microbiologia: o passo que costuma levar ao diagnóstico definitivo.</p>
+          <p class="note">Exige sedação profunda ou anestesia, hemograma e provas de coagulação prévias e ambiente hospitalar. Requer ecografia prévia feita pela DVM ou por um centro de referência.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="precos" aria-labelledby="h-precos">
+    <div class="wrap">
+      <h2 id="h-precos">Preços ao domicílio</h2>
+      <div class="prices">
+        <div class="price-card">
+          <h3>Ecografia em casa</h3>
+          <p class="sub">Abdominal, torácica, cervical ou gestação. IVA e deslocação incluídos.</p>
+          <table class="price-table">
+            <thead><tr><th scope="col"><span class="sr">Exame</span></th><th scope="col">Zona 1</th><th scope="col">Zona 2</th></tr></thead>
+            <tbody>
+              <tr><td>Uma região</td><td class="v">70 €</td><td class="v">75 €</td></tr>
+              <tr><td>Duas regiões no mesmo animal<br><span class="small" style="color:#B9C8D8">ex.: abdómen + tórax</span></td><td class="v">110 €</td><td class="v">115 €</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zones">
+          <div class="z"><span class="zone-tag">Zona 1</span><p>Lisboa, Amadora, Loures, Odivelas e Oeiras.</p></div>
+          <div class="z"><span class="zone-tag">Zona 2</span><p>Cascais, Sintra, Alverca, Alcochete, Almada, Barreiro, Moita, Montijo, Palmela, Seixal, Sesimbra e Setúbal.</p></div>
+          <p class="small">Não encontra o seu concelho? <a href="https://wa.me/351927149982?text=Ol%C3%A1%2C%20fazem%20ecografias%20ao%20domic%C3%ADlio%20no%20meu%20concelho%3F" target="_blank" rel="noopener">Pergunte-me</a>.<br>Clínicas e hospitais: preços sob consulta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="preparacao" aria-labelledby="h-prep">
+    <div class="wrap">
+      <h2 id="h-prep">Antes e durante o exame</h2>
+      <p class="intro">Uma boa preparação faz um exame mais rápido e mais completo.</p>
+      <div class="prep">
+        <div>
+          <h3>Antes</h3>
+          <ul>
+            <li><span class="k">8–12 h</span><p><b>Jejum de comida</b>; água à vontade. Comida e gases escondem os órgãos. Se o animal for diabético ou tiver outra indicação médica, confirme com o seu veterinário.</p></li>
+            <li><span class="k">Bexiga</span><p><b>Com alguma urina.</b> Evite levá-lo a urinar logo antes do exame.</p></li>
+            <li><span class="k">2–3 h</span><p><b>Animal ansioso?</b> Peça ao seu veterinário um calmante para dar 2 a 3 horas antes.</p></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Durante</h3>
+          <ul>
+            <li><span class="k">Sem dor</span><p>A ecografia é <b>indolor, não invasiva</b> e não usa radiação.</p></li>
+            <li><span class="k">Pelo</span><p>A zona a examinar é <b>tosquiada</b>, porque o pelo prejudica a imagem.</p></li>
+            <li><span class="k">Pele</span><p>Uso gel hipoalergénico e álcool. <b>Avise-me se o animal tem pele sensível</b> ou dermatite.</p></li>
+            <li><span class="k">~20 min</span><p>Num espaço <b>calmo e com pouca luz</b>. Pode demorar mais em casos complexos.</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="sobre" aria-labelledby="h-sobre">
+    <div class="wrap about">
+      <div>
+        <h2 id="h-sobre">Sobre</h2>
+        <p class="who"><b>Rafael Lopes</b>Médico Veterinário<br>Cédula profissional n.º 5355</p>
+      </div>
+      <div>
+        <p>Criei a DVM em 2022 para levar a ecografia até onde ela é precisa: às clínicas e hospitais que não têm ecografista e a casa dos tutores que preferem poupar o animal à viagem. Menos tempo de espera, menos deslocações e um exame pensado para cada caso.</p>
+        <ul>
+          <li>Médico veterinário desde 2011, pela Faculdade de Medicina Veterinária de Lisboa</li>
+          <li>Pós-graduação e internato no Hospital Veterinário da UTAD</li>
+          <li>Medicina interna e urgências em hospitais de Lisboa (HV Vasco da Gama, HV de Lisboa, HVpet24) e em Macau (Green Cross)</li>
+          <li>Dedicado à ecografia, onde tenho concentrado a minha formação</li>
+        </ul>
+        <p class="small">Fora do trabalho: fotografia, música, cinema e longos passeios na natureza.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contactos" aria-labelledby="h-contactos">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h2 id="h-contactos">Marque ou tire dúvidas</h2>
+          <p>Respondo por WhatsApp, telefone ou email. Clínicas e hospitais: indiquem o nome da clínica na primeira mensagem.</p>
+          <div class="cta-row">
+            <a class="btn btn-wa" href="https://wa.me/351927149982?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20ecografia." target="_blank" rel="noopener">Marcar por WhatsApp</a>
+            <a class="btn btn-call" href="tel:+351927149982">Ligar</a>
+          </div>
+        </div>
+        <dl>
+          <div><dt>WhatsApp e telefone</dt><dd><a href="tel:+351927149982">+351 927 149 982</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:geral@dvm.pt">geral@dvm.pt</a></dd></div>
+          <div><dt>Zonas</dt><dd>Lisboa e margem sul</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>DVM — Diagnóstico Veterinário Móvel. Rafael Lopes, Médico Veterinário.</span>
+    <span>© <span id="ano">2026</span></span>
+  </div>
+</footer>
+
+<div class="dock" role="navigation" aria-label="Marcar exame">
+  <a class="btn btn-wa" href="https://wa.me/351927149982?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20ecografia." target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-call" href="tel:+351927149982">Ligar</a>
+</div>
+
+<script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
+</body>
+</html>

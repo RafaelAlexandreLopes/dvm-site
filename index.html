@@ -93,7 +93,7 @@ p{margin:0 0 1em}
 @keyframes kb{from{transform:scale(1.08)}to{transform:scale(1)}}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(19,37,37,.88) 0%,rgba(19,37,37,.62) 42%,rgba(19,37,37,.08) 78%),linear-gradient(0deg,rgba(19,37,37,.35),transparent 40%)}
 .hero .wrap{width:100%;padding-top:96px;padding-bottom:120px}
-.hero h1{color:#fff;font-family:"Manrope",system-ui,sans-serif;font-size:clamp(2.4rem,5.4vw,4.2rem);font-weight:700;line-height:1.08;letter-spacing:-.025em;margin-bottom:.4em}
+.hero h1{color:#fff;font-family:"Manrope",system-ui,sans-serif;font-size:clamp(2.4rem,5.4vw,4.2rem);font-weight:700;line-height:1.16;letter-spacing:-.025em;margin-bottom:.45em}
 .hero h1 .l{display:block}
 
 .hero p.sub{font-size:clamp(1.1rem,1.6vw,1.3rem);max-width:36ch;color:#E6F0F0;margin-bottom:1.6em}
@@ -152,15 +152,9 @@ p{margin:0 0 1em}
 .svc{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:28px 26px}
 .svc-ico{width:84px;height:84px;border-radius:22px;background:var(--mustard-soft);display:grid;place-items:center;margin:0 auto 18px}
 .svc-ico .ico{width:66px;height:66px;color:var(--teal)}
-.svc .where{display:inline-block;font-size:.8rem;font-weight:800;color:var(--teal-3);margin-bottom:4px}
 .svc h3{margin-bottom:.45em}
 .svc p{font-size:1rem;color:var(--muted);margin-bottom:.7em}
 .svc .note{font-size:.93rem;color:var(--teal-2);background:var(--bg-2);border-radius:10px;padding:8px 12px}
-details summary{cursor:pointer;color:var(--teal-2);font-weight:800;list-style:none;display:inline-flex;align-items:center;gap:8px;font-size:.95rem}
-details summary::-webkit-details-marker{display:none}
-details summary::before{content:"+";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;font-size:1rem;line-height:1}
-details[open] summary::before{content:"–"}
-details p{margin:.7em 0 0!important;font-size:.95rem!important}
 @media (max-width:980px){.svcs{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.svcs{grid-template-columns:1fr}}
 
@@ -175,8 +169,9 @@ details p{margin:.7em 0 0!important;font-size:.95rem!important}
 .steps li::before{content:counter(s);width:46px;height:46px;border-radius:50%;background:var(--teal);color:#fff;font:900 1.2rem/46px var(--font);text-align:center}
 .steps h3{font-size:1.12rem;margin:2px 0 .2em}
 .steps p{margin:0;color:var(--muted);font-size:1rem}
-.clin{background:var(--teal);color:#fff;border-radius:var(--r);padding:20px 22px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:space-between}
-.clin p{margin:0;max-width:44ch;color:#DBE8E8}
+.clin{background:var(--teal);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.clin p{margin:0;max-width:40ch;color:#DBE8E8;line-height:1.5}
+.clin b{display:block;font-size:1.1rem;margin-bottom:2px}
 .clin b{color:#fff}
 @media (max-width:900px){.how{grid-template-columns:1fr;gap:34px}.how .ph img{aspect-ratio:16/10}.how .badge{right:14px}}
 
@@ -190,13 +185,15 @@ details p{margin:.7em 0 0!important;font-size:.95rem!important}
 .ptab th,.ptab td{padding:16px 6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.14)}
 .ptab th:first-child,.ptab td:first-child{text-align:left;padding-left:0}
 .ptab thead th{font-weight:700;color:#C6D9D9;font-size:.95rem}
-.ptab td.v{font:900 2rem/1 var(--font);color:var(--mustard)}
+.ptab td.v{font:900 1.7rem/1 var(--font);color:var(--mustard);white-space:nowrap}
+.ptab .eur{font-size:.5em;font-weight:800;margin-left:.15em;vertical-align:.5em}
 .ptab tr:last-child td{border-bottom:0}
 .ptab small{display:block;color:#C6D9D9;font-size:.88rem}
-.zones{background:var(--bg-2);border-radius:var(--r-l);padding:30px}
-.zones h3{font-size:1.1rem;margin-bottom:.35em;display:flex;align-items:center;gap:10px}
-.zones h3 span{font-size:.8rem;background:var(--mustard);color:var(--ink);border-radius:999px;padding:3px 10px}
-.zones p{color:var(--muted);font-size:1rem}
+.zones{background:var(--bg-2);border-radius:var(--r-l);padding:34px;display:flex;flex-direction:column;justify-content:center}
+.zones h3{font-size:1.1rem;margin-bottom:.6em;display:flex;align-items:center;gap:10px}
+.zones h3 span{font-size:.95rem;font-weight:800;background:var(--mustard);color:var(--ink);border-radius:999px;padding:6px 16px}
+.zones p{color:var(--ink);font-size:1.1rem;line-height:1.6;margin:0}
+.zones p+h3{margin-top:1.6em}
 .zones .q{font-weight:700;color:var(--teal);margin:0}
 @media (max-width:900px){.price{grid-template-columns:1fr}}
 
@@ -277,7 +274,7 @@ footer a{color:#D4E3E3}
   <section class="hero" aria-labelledby="titulo">
     <img class="bg" src="https://images.unsplash.com/photo-1504968430878-8b4dc34be661?auto=format&fit=crop&w=2000&q=80" srcset="https://images.unsplash.com/photo-1504968430878-8b4dc34be661?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1504968430878-8b4dc34be661?auto=format&fit=crop&w=1400&q=80 1400w, https://images.unsplash.com/photo-1504968430878-8b4dc34be661?auto=format&fit=crop&w=2000&q=80 2000w" sizes="100vw" alt="" fetchpriority="high">
     <div class="wrap">
-      <h1 id="titulo" class="rise"><span class="l">Ecografia veterinária</span><span class="l l2">em sua casa,</span><span class="l l2">no seu hospital,</span><span class="l l2">na sua clínica.</span></h1>
+      <h1 id="titulo" class="rise"><span class="l">Ecografia veterinária</span><span class="l">em sua casa</span><span class="l">no seu hospital</span><span class="l">na sua clínica</span></h1>
       <p class="sub rise d1">Sem viagens nem salas de espera. Em Lisboa e na margem sul, com relatório detalhado para o seu veterinário.</p>
       <div class="ctas rise d2">
         <a class="btn btn-main" href="https://wa.me/351927149982?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20ecografia." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg> Marcar por WhatsApp</a>
@@ -292,8 +289,8 @@ footer a{color:#D4E3E3}
     <div class="wrap">
       <ul>
         <li><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 22 24 8l17 14"/><path d="M11 19v21h26V19"/><path d="M20 40V29h8v11"/></svg><b>Menos stress</b><span>O exame é feito onde o animal está tranquilo</span></li>
-        <li><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 6h17l7 7v29H13z"/><path d="M30 6v7h7"/><path d="M18 22h14M18 28h14M18 34h9"/></svg><b>Relatório completo</b><span>Descrição detalhada e imagens</span></li>
-        <li><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 43s-13-12-13-22a13 13 0 0 1 26 0c0 10-13 22-13 22z"/><circle cx="24" cy="21" r="5"/></svg><b>Lisboa e Margem Sul</b><span>Vou até à sua casa, clínica ou hospital</span></li>
+        <li><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 6h17l7 7v29H13z"/><path d="M30 6v7h7"/><path d="M18 22h14M18 28h14M18 34h9"/></svg><b>Relatório completo</b><span>Descrição detalhada e Imagens</span></li>
+        <li><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 43s-13-12-13-22a13 13 0 0 1 26 0c0 10-13 22-13 22z"/><circle cx="24" cy="21" r="5"/></svg><b>Lisboa e Margem Sul</b><span>Vou até casa, clínica ou hospital</span></li>
         <li><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 40S8 30 8 18a8 8 0 0 1 16-3 8 8 0 0 1 16 3c0 12-16 22-16 22z"/><path d="M14 22h5l3-5 4 9 3-4h5"/></svg><b>Desde 2011</b><span>Médico veterinário com mais de 15 anos de experiência</span></li>
       </ul>
     </div>
@@ -318,52 +315,39 @@ footer a{color:#D4E3E3}
       <div class="head c">
         <span class="kicker">Serviços</span>
         <h2 id="h-servicos">Exames ecográficos e procedimentos ecoguiados</h2>
-        <p class="lead">Explicados de forma simples. Os pormenores técnicos estão em «Ver detalhes».</p>
+        <p class="lead">Explicados de forma simples.</p>
       </div>
       <div class="svcs">
         <article class="svc">
           <div class="svc-ico"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6h8v12a4 4 0 0 1-8 0z"/><path d="M28 9c6 0 6-4 10-4"/><path d="M8 40c8-10 24-10 32 0"/><path d="M21 26c2 1.5 4 1.5 6 0"/></svg></div>
-          <span class="where">Em casa e na clínica</span>
           <h3>Ecografia abdominal</h3>
           <p>Avaliação completa de todos os órgãos do abdómen, feita de forma metódica para não deixar passar alterações discretas.</p>
-          
-          <details><summary>Ver detalhes</summary><p>Fígado e vesícula biliar, pâncreas, baço, estômago e intestinos, rins, ureteres e bexiga, glândulas adrenais, próstata e testículos ou ovários e útero, mesentério, linfonodos, vasos e superfícies serosas.</p></details>
         </article>
         <article class="svc">
           <div class="svc-ico"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6h8v12a4 4 0 0 1-8 0z"/><path d="M28 9c6 0 6-4 10-4"/><path d="M17 30c-2 3-2 7 0 10M22 30c-2 3-2 7 0 10M27 30c-2 3-2 7 0 10M32 30c-2 3-2 7 0 10"/></svg></div>
-          <span class="where">Em casa e na clínica</span>
           <h3>Ecografia torácica e pleural</h3>
           <p>Útil quando há líquido no tórax, massas ou alterações pulmonares, muitas vezes difíceis de ver só com radiografia.</p>
-          
-          <details><summary>Ver detalhes</summary><p>Contornos dos lobos pulmonares, pleura, vasos e linfonodos mediastínicos. Avalia derrame pleural, consolidação ou colapso pulmonar e massas ou nódulos. Complementa, sem substituir, a radiografia torácica, a TAC ou a ressonância magnética.</p></details>
         </article>
         <article class="svc">
           <div class="svc-ico"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6h8v12a4 4 0 0 1-8 0z"/><path d="M28 9c6 0 6-4 10-4"/><path d="M12 34h24"/><path d="M14 34v6M19 34v6M24 34v6M29 34v6M34 34v6"/></svg></div>
-          <span class="where">Em casa e na clínica</span>
           <h3>Ecografia cervical</h3>
           <p>Estudo das estruturas do pescoço, como a tiróide, as paratiróides e a laringe.</p>
           <p class="note">Pode ser necessária uma sedação ligeira.</p>
-          <details><summary>Ver detalhes</summary><p>Laringe e cordas vocais, tiróide, paratiróides, glândulas salivares, vasos e linfonodos.</p></details>
         </article>
         <article class="svc">
           <div class="svc-ico"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6h8v12a4 4 0 0 1-8 0z"/><path d="M28 9c6 0 6-4 10-4"/><path d="M6 35c10-11.5 26-11.5 36 0"/><path d="M24 40s-4-2.5-4-5a2 2 0 0 1 4-.5 2 2 0 0 1 4 .5c0 2.5-4 5-4 5z"/></svg></div>
-          <span class="where">Em casa e na clínica</span>
           <h3>Diagnóstico de gestação</h3>
           <p>Confirma a gestação, avalia a viabilidade dos fetos e estima a data do parto.</p>
-          <p class="note">A partir do dia 21 na gata e do dia 25 na cadela.</p>
-          <details><summary>Ver detalhes</summary><p>Permite acompanhar o desenvolvimento dos órgãos fetais, sobretudo em raças com risco de parto difícil. Para contar os fetos, a radiografia no último terço da gestação é mais precisa.</p></details>
+          <p class="note">A partir do 21.º dia (gata) e 25.º dia (cadela).</p>
         </article>
         <article class="svc">
           <div class="svc-ico"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6h8v12a4 4 0 0 1-8 0z"/><path d="M8 40c8-10 24-10 32 0"/><path d="M36 14 26 34"/><circle cx="25.5" cy="35" r="2.5"/></svg></div>
-          <span class="where">Na clínica</span>
           <h3>Punção aspirativa ecoguiada</h3>
           <p>Recolha de células de um órgão, nódulo ou massa com agulha fina, guiada em tempo real pela ecografia.</p>
-          <p class="note">Requer ecografia prévia pela DVM ou centro de referência.</p>
-          <details><summary>Ver detalhes</summary><p>Ver a agulha permite dirigi-la à lesão, evitar zonas muito vascularizadas e obter amostras mais representativas, analisadas em laboratórios certificados.</p></details>
+          <p class="note">Requer relatório ecográfico da lesão ou ecografia prévia pela DVM.</p>
         </article>
         <article class="svc">
           <div class="svc-ico"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6h8v12a4 4 0 0 1-8 0z"/><path d="M8 40c8-10 24-10 32 0"/><path d="M38 12 27 33"/><path d="M24 31h7l-2 5h-4z"/></svg></div>
-          <span class="where">Na clínica ou hospital</span>
           <h3>Biópsia Tru-Cut ecoguiada</h3>
           <p>Amostra maior de tecido, que mantém a sua estrutura, para histopatologia: o passo que costuma levar ao diagnóstico definitivo.</p>
           <p class="note">Sedação profunda ou anestesia, análises de coagulação e ambiente hospitalar.</p>
@@ -389,7 +373,7 @@ footer a{color:#D4E3E3}
           <li><div><h3>Recebe o relatório</h3><p>Você e o seu veterinário, com imagens e medições, em 3 a 5 dias úteis. Os resultados principais são discutidos com o veterinário logo após o exame.</p></div></li>
         </ol>
         <div class="clin" id="clinicas">
-          <p><b>Clínicas e hospitais:</b> combinamos datas, exames e condições diretamente.</p>
+          <p><b>Clínicas e hospitais</b> Combinamos datas, exames e condições diretamente.</p>
           <a class="btn btn-main" href="tel:+351927149982"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg> Ligar</a>
         </div>
       </div>
@@ -410,8 +394,8 @@ footer a{color:#D4E3E3}
           <table class="ptab">
             <thead><tr><th scope="col"><span class="sr">Exame</span></th><th scope="col">Zona 1</th><th scope="col">Zona 2</th></tr></thead>
             <tbody>
-              <tr><td>Uma região</td><td class="v">70 €</td><td class="v">75 €</td></tr>
-              <tr><td>Duas regiões<small>no mesmo animal, ex.: abdómen + tórax</small></td><td class="v">110 €</td><td class="v">115 €</td></tr>
+              <tr><td>Uma região</td><td class="v">70<span class="eur">€</span></td><td class="v">75<span class="eur">€</span></td></tr>
+              <tr><td>Duas regiões<small>no mesmo animal, ex.: abdómen + tórax</small></td><td class="v">110<span class="eur">€</span></td><td class="v">115<span class="eur">€</span></td></tr>
             </tbody>
           </table>
         </div>
@@ -420,7 +404,6 @@ footer a{color:#D4E3E3}
           <p>Lisboa, Amadora, Loures, Odivelas e Oeiras.</p>
           <h3><span>Zona 2</span></h3>
           <p>Cascais, Sintra, Alverca, Alcochete, Almada, Barreiro, Moita, Montijo, Palmela, Seixal, Sesimbra e Setúbal.</p>
-          <p class="q">Não encontra o seu concelho? <a href="https://wa.me/351927149982?text=Ol%C3%A1%2C%20fazem%20ecografias%20ao%20domic%C3%ADlio%20no%20meu%20concelho%3F" target="_blank" rel="noopener">Pergunte-me</a>.</p>
         </div>
       </div>
     </div>
@@ -436,7 +419,7 @@ footer a{color:#D4E3E3}
           <li><span class="k">8–12 h</span><p><b>Jejum de comida</b>, com água à vontade. Animal diabético ou com indicação médica? Confirme com o seu veterinário.</p></li>
           <li><span class="k">Bexiga</span><p><b>Com alguma urina.</b> Evite levá-lo a urinar logo antes do exame.</p></li>
           <li><span class="k">2–3 h</span><p><b>Animal ansioso?</b> Peça ao seu veterinário um calmante para dar antes.</p></li>
-          <li><span class="k">Pelo</span><p>A zona é <b>tosquiada</b>. O exame é indolor e não usa radiação. Avise-me se tem pele sensível.</p></li>
+          <li><span class="k">Pelo</span><p>A região examinada é <b>tosquiada</b> com lâmina de cerâmica, para evitar ao máximo a irritação cutânea. O exame é indolor e não usa radiação.</p></li>
         </ul>
       </div>
       <img src="https://images.unsplash.com/photo-1552493512-cda1df4e3b62?auto=format&fit=crop&w=900&q=80&h=720" alt="Gato enrolado numa manta em casa" loading="lazy">

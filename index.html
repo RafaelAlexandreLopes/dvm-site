@@ -11,11 +11,11 @@
 <meta property="og:url" content="https://dvm.pt/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_PT">
-<meta name="theme-color" content="#13233A">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4 L6 52 A44 44 0 0 0 58 52 Z' fill='%2313233A'/%3E%3Cellipse cx='32' cy='40' rx='9' ry='6' fill='%233A86C8'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#25403C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4 L6 52 A44 44 0 0 0 58 52 Z' fill='%2325403C'/%3E%3Cellipse cx='32' cy='40' rx='9' ry='6' fill='%23E2B02A'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -31,20 +31,21 @@
 </script>
 <style>
 :root{
-  --ink:#13233A;          /* texto e superfícies escuras */
-  --ink-soft:#4A5B70;     /* texto secundário */
-  --paper:#F6F8FA;        /* fundo */
+  --ink:#25403C;          /* verde-petróleo do logótipo */
+  --ink-soft:#56706B;     /* texto secundário */
+  --paper:#F3F6F5;        /* fundo */
   --white:#FFFFFF;
-  --mist:#DCE7F1;         /* linhas e fundos suaves */
-  --gel:#2F78BC;          /* acento: azul do gel de ecografia */
-  --gel-deep:#1F5C96;
+  --mist:#DAE4E1;         /* linhas e fundos suaves */
+  --gel:#E2B02A;          /* amarelo-mostarda da DVM */
+  --gel-deep:#2E6A61;     /* verde para ligações */
+  --mustard-soft:#FBF0CF;
   --wa:#25D366;           /* WhatsApp */
   --wa-ink:#0B3D22;
   --radius-s:6px;
   --radius-l:18px;
   --wrap:1080px;
-  --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --display:"Bricolage Grotesque","Atkinson Hyperlegible",system-ui,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --display:"Nunito",system-ui,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -54,9 +55,9 @@ img,svg{display:block;max-width:100%}
 a{color:var(--gel-deep);text-underline-offset:3px}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gel);outline-offset:3px;border-radius:4px}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.1;margin:0;letter-spacing:-.01em}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.1;margin:0;letter-spacing:-.01em}
 h2{font-size:clamp(1.75rem,3.6vw,2.5rem);margin-bottom:.6em}
-h3{font-size:1.25rem;font-weight:600}
+h3{font-size:1.25rem;font-weight:700}
 p{margin:0 0 1em;max-width:62ch}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 12px;z-index:99}
@@ -72,11 +73,11 @@ p{margin:0 0 1em;max-width:62ch}
 .btn-sm{padding:.65em 1em;font-size:.95rem}
 
 /* Cabeçalho */
-header.top{position:sticky;top:0;z-index:20;background:rgba(246,248,250,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--mist)}
+header.top{position:sticky;top:0;z-index:20;background:rgba(243,246,245,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--mist)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
 .brand-mark{width:30px;height:30px}
-.brand b{font:700 1.35rem/1 var(--display);letter-spacing:.02em}
+.brand b{font:800 1.45rem/1 var(--display);letter-spacing:.01em}
 .brand span{font-size:.8rem;color:var(--ink-soft);line-height:1.15;max-width:9.5em}
 nav.links{display:flex;gap:22px;align-items:center}
 nav.links a{color:var(--ink);text-decoration:none;font-size:.95rem}
@@ -87,13 +88,15 @@ nav.links a:hover{color:var(--gel-deep);text-decoration:underline}
 /* Topo */
 .hero{padding:56px 0 64px}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(2.5rem,6.2vw,4.4rem);font-weight:700;letter-spacing:-.025em;line-height:1.02;margin-bottom:.45em}
+.hero h1{font-size:clamp(2.4rem,5.8vw,4.1rem);font-weight:800;letter-spacing:-.025em;line-height:1.02;margin-bottom:.45em}
 .hero .lede{font-size:1.2rem;color:var(--ink-soft);max-width:34ch;margin-bottom:1.6em}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
 .clinic-note{font-size:.98rem;color:var(--ink-soft);margin:0}
 .clinic-note a{font-weight:700}
 .scan{position:relative;justify-self:center;width:100%;max-width:440px}
-.scan svg{width:100%;height:auto;filter:drop-shadow(0 18px 30px rgba(19,35,58,.18))}
+.scan svg{width:100%;height:auto;filter:drop-shadow(0 18px 30px rgba(37,64,60,.2))}
+.sweep{transform-origin:200px 14px;animation:sweep 5.5s ease-in-out infinite alternate}
+@keyframes sweep{from{transform:rotate(-26deg)}to{transform:rotate(26deg)}}
 @media (max-width:860px){
   .hero{padding:32px 0 48px}
   .hero .wrap{grid-template-columns:1fr;gap:28px}
@@ -103,6 +106,18 @@ nav.links a:hover{color:var(--gel-deep);text-decoration:underline}
   .scan{display:none}
 }
 
+
+/* Para quem */
+.audiences{padding:8px 0 64px}
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.aud a{display:block;text-decoration:none;color:var(--ink);background:var(--white);border:1px solid var(--mist);border-radius:var(--radius-l);padding:24px 24px 22px;transition:border-color .2s,transform .2s}
+.aud a:hover{border-color:var(--gel);transform:translateY(-2px)}
+.aud svg{width:44px;height:44px;margin-bottom:12px}
+.aud h2{font-size:1.35rem;margin:0 0 .35em}
+.aud p{font-size:1rem;color:var(--ink-soft);margin:0 0 .8em}
+.aud .go{font-weight:700;color:var(--gel-deep)}
+@media (max-width:860px){.aud{grid-template-columns:1fr}}
+
 /* Secções */
 section.block{padding:72px 0;border-top:1px solid var(--mist)}
 .intro{color:var(--ink-soft);font-size:1.1rem;margin-bottom:2em}
@@ -110,7 +125,7 @@ section.block{padding:72px 0;border-top:1px solid var(--mist)}
 /* Como marcar */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
 .steps li{counter-increment:s;position:relative;padding-top:58px}
-.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;font:700 1.15rem/42px var(--display);text-align:center}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--gel);color:var(--ink);font:800 1.15rem/42px var(--display);text-align:center}
 .steps li:not(:last-child)::after{content:"";position:absolute;top:21px;left:54px;right:-16px;height:2px;background:repeating-linear-gradient(90deg,var(--mist) 0 6px,transparent 6px 12px)}
 .steps h3{margin-bottom:.35em}
 .steps p{font-size:1rem;color:var(--ink-soft);margin:0}
@@ -128,7 +143,7 @@ section.block{padding:72px 0;border-top:1px solid var(--mist)}
 .svc h3{margin-bottom:.4em}
 .svc p{font-size:1rem;margin-bottom:.6em}
 .svc .note{font-size:.95rem;color:var(--ink-soft)}
-.svc .where{display:inline-block;font-size:.82rem;font-weight:700;color:var(--gel-deep);background:#E6F0F9;border-radius:var(--radius-s);padding:3px 8px;margin-bottom:10px}
+.svc .where{display:inline-block;font-size:.82rem;font-weight:700;color:#6B4F00;background:var(--mustard-soft);border-radius:var(--radius-s);padding:3px 8px;margin-bottom:10px}
 details{font-size:.95rem}
 details summary{cursor:pointer;color:var(--gel-deep);font-weight:700;list-style:none;display:inline-flex;align-items:center;gap:6px}
 details summary::-webkit-details-marker{display:none}
@@ -141,18 +156,18 @@ details p{margin:.6em 0 0;color:var(--ink-soft)}
 .prices{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
 .price-card{background:var(--ink);color:#fff;border-radius:var(--radius-l);padding:28px}
 .price-card h3{color:#fff;margin-bottom:.3em}
-.price-card .sub{color:#B9C8D8;font-size:.95rem;margin-bottom:1.2em}
+.price-card .sub{color:#BFD3CE;font-size:.95rem;margin-bottom:1.2em}
 .price-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
 .price-table th,.price-table td{padding:14px 8px;text-align:right;border-bottom:1px solid rgba(255,255,255,.14)}
 .price-table th:first-child,.price-table td:first-child{text-align:left;padding-left:0}
-.price-table thead th{font-weight:400;color:#B9C8D8;font-size:.95rem}
-.price-table td.v{font:700 1.6rem/1 var(--display)}
+.price-table thead th{font-weight:400;color:#BFD3CE;font-size:.95rem}
+.price-table td.v{font:800 1.6rem/1 var(--display);color:var(--gel)}
 .price-table td:first-child{font-size:1rem}
 .price-table tr:last-child td{border-bottom:0}
 .zones h3{margin-bottom:.3em}
 .zones p{font-size:1rem}
 .zones .z{margin-bottom:22px}
-.zone-tag{display:inline-block;font-size:.82rem;font-weight:700;border-radius:var(--radius-s);padding:3px 8px;margin-bottom:6px;background:var(--mist);color:var(--ink)}
+.zone-tag{display:inline-block;font-size:.82rem;font-weight:700;border-radius:var(--radius-s);padding:3px 8px;margin-bottom:6px;background:var(--gel);color:var(--ink)}
 .small{font-size:.95rem;color:var(--ink-soft)}
 @media (max-width:860px){.prices{grid-template-columns:1fr}}
 
@@ -160,7 +175,7 @@ details p{margin:.6em 0 0;color:var(--ink-soft)}
 .prep{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .prep ul{list-style:none;margin:0;padding:0}
 .prep li{display:grid;grid-template-columns:72px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--mist);align-items:baseline}
-.prep li .k{font:700 1.15rem/1.15 var(--display);color:var(--gel-deep)}
+.prep li .k{font:800 1.15rem/1.15 var(--display);color:var(--gel-deep)}
 .prep li p{margin:0;font-size:1rem}
 .prep h3{margin-bottom:.4em}
 @media (max-width:760px){.prep{grid-template-columns:1fr;gap:28px}}
@@ -176,10 +191,10 @@ details p{margin:.6em 0 0;color:var(--ink-soft)}
 /* Contactos */
 .contact{background:var(--ink);color:#fff;border-radius:var(--radius-l);padding:44px 36px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
 .contact h2{color:#fff}
-.contact p{color:#C9D6E3}
+.contact p{color:#CFDDD9}
 .contact .cta-row{margin:0}
 .contact dl{margin:0;display:grid;gap:14px}
-.contact dt{font-size:.85rem;color:#9FB2C6}
+.contact dt{font-size:.85rem;color:#A9C0BA}
 .contact dd{margin:0;font-size:1.15rem}
 .contact dd a{color:#fff}
 @media (max-width:760px){.contact{grid-template-columns:1fr;padding:32px 22px}}
@@ -190,7 +205,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 /* Barra fixa de marcação no telemóvel */
 .dock{display:none}
 @media (max-width:760px){
-  .dock{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(246,248,250,.96);border-top:1px solid var(--mist);backdrop-filter:blur(8px)}
+  .dock{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(243,246,245,.96);border-top:1px solid var(--mist);backdrop-filter:blur(8px)}
   .dock .btn{justify-content:center;width:100%}
   header.top .btn{display:none}
 }
@@ -202,7 +217,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#" aria-label="DVM — Diagnóstico Veterinário Móvel, início">
-      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 L6 52 A44 44 0 0 0 58 52 Z" fill="#13233A"/><ellipse cx="32" cy="40" rx="9" ry="6" fill="#2F78BC"/></svg>
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#25403C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="40" r="9" fill="#E2B02A"/></svg>
       <b>DVM</b><span>Diagnóstico Veterinário Móvel</span>
     </a>
     <nav class="links" aria-label="Secções">
@@ -247,34 +262,45 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
               <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 -.18"/>
             </filter>
             <radialGradient id="depth" cx="50%" cy="0%" r="100%">
-              <stop offset="0" stop-color="#2B3B50"/>
-              <stop offset=".65" stop-color="#16263B"/>
-              <stop offset="1" stop-color="#0E1A2A"/>
+              <stop offset="0" stop-color="#4A4D4E"/>
+              <stop offset=".65" stop-color="#262829"/>
+              <stop offset="1" stop-color="#141516"/>
             </radialGradient>
+            <linearGradient id="beam" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
             <radialGradient id="organ" cx="50%" cy="50%" r="50%">
-              <stop offset="0" stop-color="#0B1522"/>
-              <stop offset=".72" stop-color="#132236"/>
-              <stop offset="1" stop-color="#9FB2C6" stop-opacity=".9"/>
+              <stop offset="0" stop-color="#0D0E0E"/>
+              <stop offset=".72" stop-color="#1E2021"/>
+              <stop offset="1" stop-color="#C9CCCB" stop-opacity=".9"/>
             </radialGradient>
           </defs>
           <g clip-path="url(#sector)">
             <rect width="400" height="330" fill="url(#depth)"/>
             <rect width="400" height="330" filter="url(#speckle)" opacity=".55"/>
-            <path d="M90 110 Q200 75 310 110" stroke="#C9D6E3" stroke-opacity=".35" stroke-width="5" fill="none"/>
-            <path d="M70 140 Q200 105 330 140" stroke="#C9D6E3" stroke-opacity=".18" stroke-width="3" fill="none"/>
+            <path d="M90 110 Q200 75 310 110" stroke="#D9DCDB" stroke-opacity=".35" stroke-width="5" fill="none"/>
+            <path d="M70 140 Q200 105 330 140" stroke="#D9DCDB" stroke-opacity=".18" stroke-width="3" fill="none"/>
             <ellipse cx="205" cy="200" rx="92" ry="52" fill="url(#organ)"/>
-            <ellipse cx="205" cy="200" rx="92" ry="52" fill="none" stroke="#E7EEF5" stroke-opacity=".7" stroke-width="2.5"/>
-            <ellipse cx="200" cy="202" rx="36" ry="16" fill="#E7EEF5" fill-opacity=".22"/>
+            <ellipse cx="205" cy="200" rx="92" ry="52" fill="none" stroke="#EEF0EF" stroke-opacity=".7" stroke-width="2.5"/>
+            <ellipse cx="200" cy="202" rx="36" ry="16" fill="#EEF0EF" fill-opacity=".22"/>
+            <g class="sweep"><path d="M200 14 L170 290 L230 290 Z" fill="url(#beam)"/></g>
           </g>
-          <path d="M200 14 L36 236 A276 276 0 0 0 364 236 Z" fill="none" stroke="#13233A" stroke-width="2"/>
-          <g fill="#2F78BC">
+          <path d="M200 14 L36 236 A276 276 0 0 0 364 236 Z" fill="none" stroke="#25403C" stroke-width="2"/>
+          <g fill="#E2B02A">
             <circle cx="376" cy="70" r="2.5"/><circle cx="380" cy="120" r="2.5"/><circle cx="384" cy="170" r="2.5"/><circle cx="388" cy="220" r="2.5"/>
           </g>
-          <g stroke="#2F78BC" stroke-width="2" fill="none">
+          <g stroke="#E2B02A" stroke-width="2" fill="none">
             <path d="M126 200 l10 -6 m-10 6 l10 6"/><path d="M284 200 l-10 -6 m10 6 l-10 6"/>
           </g>
         </svg>
       </figure>
+    </div>
+  </section>
+
+
+  <section class="audiences" aria-label="Para quem">
+    <div class="wrap aud">
+      <a href="#marcar"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 23 24 8l18 15" fill="none" stroke="#E2B02A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 21v19h26V21" fill="#E2B02A"/><rect x="20" y="28" width="8" height="12" rx="1" fill="#fff"/></svg><h2>Domicílio</h2><p>Para alguns animais, ir ao veterinário é um sofrimento. Faço a ecografia em casa, com calma e sem viagens.</p><span class="go">Como marcar</span></a>
+      <a href="#clinicas"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 23 24 8l18 15" fill="none" stroke="#E2B02A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 21v19h26V21" fill="#E2B02A"/><path d="M24 24v12M18 30h12" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg><h2>Clínica veterinária</h2><p>Sem ecógrafo na clínica? Faço o exame nas vossas instalações e discuto o caso com a vossa equipa.</p><span class="go">Falar comigo</span></a>
+      <a href="#clinicas"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="14" width="32" height="28" rx="3" fill="#E2B02A"/><path d="M24 4v10M19 9h10" stroke="#E2B02A" stroke-width="4" stroke-linecap="round"/><g fill="#fff"><rect x="13" y="20" width="5" height="5"/><rect x="21.5" y="20" width="5" height="5"/><rect x="30" y="20" width="5" height="5"/><rect x="13" y="29" width="5" height="5"/><rect x="30" y="29" width="5" height="5"/><rect x="21" y="31" width="6" height="11"/></g></svg><h2>Hospital veterinário</h2><p>Ecografias e procedimentos ecoguiados quando o vosso ecografista não está disponível.</p><span class="go">Falar comigo</span></a>
     </div>
   </section>
 
@@ -353,7 +379,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
             <thead><tr><th scope="col"><span class="sr">Exame</span></th><th scope="col">Zona 1</th><th scope="col">Zona 2</th></tr></thead>
             <tbody>
               <tr><td>Uma região</td><td class="v">70 €</td><td class="v">75 €</td></tr>
-              <tr><td>Duas regiões no mesmo animal<br><span class="small" style="color:#B9C8D8">ex.: abdómen + tórax</span></td><td class="v">110 €</td><td class="v">115 €</td></tr>
+              <tr><td>Duas regiões no mesmo animal<br><span class="small" style="color:#BFD3CE">ex.: abdómen + tórax</span></td><td class="v">110 €</td><td class="v">115 €</td></tr>
             </tbody>
           </table>
         </div>
@@ -399,7 +425,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
         <p class="who"><b>Rafael Lopes</b>Médico Veterinário<br>Cédula profissional n.º 5355</p>
       </div>
       <div>
-        <p>Criei a DVM em 2022 para levar a ecografia até onde ela é precisa: às clínicas e hospitais que não têm ecografista e a casa dos tutores que preferem poupar o animal à viagem. Menos tempo de espera, menos deslocações e um exame pensado para cada caso.</p>
+        <p>Criei a DVM em 2022 porque a ecografia devia ser um exame de rotina, e muitas clínicas não a conseguem ter: o equipamento é caro e a formação exige anos. Levo-a até onde ela é precisa, às clínicas e hospitais sem ecografista e a casa dos tutores que preferem poupar o animal à viagem.</p>
+        <p>Trabalho lado a lado com o veterinário assistente: discutimos o caso no momento, o diagnóstico chega mais depressa e o animal passa por menos stress.</p>
         <ul>
           <li>Médico veterinário desde 2011, pela Faculdade de Medicina Veterinária de Lisboa</li>
           <li>Pós-graduação e internato no Hospital Veterinário da UTAD</li>
